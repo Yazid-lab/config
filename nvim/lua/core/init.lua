@@ -26,7 +26,7 @@ opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
-
+opt.hlsearch = false
 -- Numbers
 opt.number = true
 opt.numberwidth = 2
