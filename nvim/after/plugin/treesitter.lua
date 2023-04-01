@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "python", "bash", "javascript" },
+	ensure_installed = { "python", "bash", "javascript", "lua" },
 	highlight = {
 		enable = true,
 	},
