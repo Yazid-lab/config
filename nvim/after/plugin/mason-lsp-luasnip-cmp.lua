@@ -71,7 +71,6 @@ cmp.setup({
 	-- }
 })
 
-
 cmp.setup.filetype("typescript", {
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp", max_item_count = 10 },
@@ -133,19 +132,6 @@ require("mason-lspconfig").setup_handlers({
 		})
 	end,
 	-- Next, you can provide targeted overrides for specific servers.
-	["sumneko_lua"] = function()
-		lspconfig.sumneko_lua.setup({
-			on_attach = on_attach,
-			capabilities = capabilities,
-			settings = {
-				Lua = {
-					diagnostics = {
-						globals = { "vim" },
-					},
-				},
-			},
-		})
-	end,
 	["tsserver"] = function()
 		lspconfig.tsserver.setup({
 			on_attach = on_attach,
