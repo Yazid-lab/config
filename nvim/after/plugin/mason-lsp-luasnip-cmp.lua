@@ -1,4 +1,5 @@
 require("mason").setup({
+	ensure_installed = { "lua_ls", "stylua", "pyright", "black", "typescript-language-server", "prettier" },
 	ui = {
 		icons = {
 			package_installed = "✓",
